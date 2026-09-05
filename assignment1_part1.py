@@ -1,11 +1,15 @@
+list_divide(numbers, divide=2) counts how many numbers in the list are divisible by the given divisor (default is 2). It iterates through each number in the list, checks if it is divisible by the divisor, and increments a count accordingction returns the total count of divisible numbers.
+def list_divide(numbers, divide=2):
+    count = 0
+    for n in numbers:
+        if n % divide == 0:
+            count += 1
+    return count
+class ListDivideException(Exception):
+    pass 
 
-def list_divide(numbers, divide):
-    """
-    The function returns the number of elements in the numbers list that are divisibleby divide
-    """
-    pass
+def_list_divide():
 
-def test_list_divide():
     """
     Test listDivide
     """
